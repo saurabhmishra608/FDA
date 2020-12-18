@@ -16,7 +16,7 @@ class TrainOptions():
         parser.add_argument("--snapshot-dir", type=str, default='../checkpoints/FDA', help="Where to save snapshots of the model.")
         parser.add_argument("--data-dir", type=str, default='../data_semseg/GTA5', help="Path to the directory containing the source dataset.")
         parser.add_argument("--data-list", type=str, default='./dataset/gta5_list/train.txt', help="Path to the listing of images in the source dataset.")
-        parser.add_argument("--data-dir-target", type=str, default='../data_semseg/cityscapes', help="Path to the directory containing the target dataset.")
+        parser.add_argument("--data-dir-target", type=str, default='../cityscapesScripts', help="Path to the directory containing the target dataset.")
         parser.add_argument("--data-list-target", type=str, default='./dataset/cityscapes_list/train.txt', help="list of images in the target dataset.")
         parser.add_argument("--set", type=str, default='train', help="choose adaptation set.")
         parser.add_argument("--label-folder", type=str, default=None, help="Path to the directory containing the pseudo labels.")
