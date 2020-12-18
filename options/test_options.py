@@ -6,7 +6,7 @@ class TestOptions():
         parser.add_argument("--model", type=str, default='DeepLab', help="available options : DeepLab and VGG")
         parser.add_argument("--GPU", type=str, default='0', help="which GPU to use")
 
-        parser.add_argument("--data-dir-target", type=str, default='../cityscapesScripts/', help="Path to the directory containing the target dataset.")
+        parser.add_argument("--data-dir-target", type=str, default='../cityscapesScripts', help="Path to the directory containing the target dataset.")
         parser.add_argument("--data-list-target", type=str, default='./dataset/cityscapes_list/val.txt', help="list of images in the target dataset.")
         parser.add_argument("--num-classes", type=int, default=19, help="Number of classes for cityscapes.")
         parser.add_argument("--set", type=str, default='val', help="choose test set.")
